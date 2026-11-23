@@ -1,31 +1,42 @@
 <html>
-    <head>
-
-    </head>
-    <body>
-        <script>
-            for(var i=0; i<10; i++){
-                if(i===5){
-                    break;
-                }
-                document.write('coding everybody'+i+'<br/>');
-            }
-        </script>
-    </body>
+  <head> </head>
+  <body>
+    <script>
+      for (var i = 0; i < 10; i++) {
+        if (i === 5) {
+          break;
+        }
+        document.write("coding everybody" + i + "<br/>");
+      }
+    </script>
+  </body>
 </html>
-<br/>
+<br />
 <html>
-    <head>
+  <head> </head>
+  <body>
+    <script>
+      for (var i = 0; i < 10; i++) {
+        if (i === 5) {
+          continue;
+        }//code block(})생략 가능
+        //생략시에는 그 조건 한문장만 수행이 된다는 의미
+        document.write("coding everyone" + i + "<br/>");
+      }
+    </script>
+  </body>
+</html>
 
-    </head>
-    <body>
-        <script>
-            for(var i =0; i<10; i++){
-                if(i===5){
-                    continue;
-                }
-                document.write('coding everyone'+i+'<br/>');
-            }
-        </script>
-    </body>
+<br />
+<html>
+  <head> </head>
+  <body>
+    <script>
+      for (var i = 0; i < 10; i++) {
+        if (i === 5) 
+          continue;
+        document.write("coding everyone" + i + "<br/>");
+      }
+    </script>
+  </body>
 </html>
