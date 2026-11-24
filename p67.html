@@ -8,10 +8,19 @@
 <body>
     <img id ="image" src="cute.jpg" width="200" height"350">
     <script>
+        var imgsrc =1;
         function changeImage(){
-            document.getElementById("image").src="angry.jpg";
-        }
-    </script>
+            if(imgsrc == 2) {
+                    document.getElementById("image").src = "angry.jpg"
+                    imgsrc = 1;
+                }else{
+                    document.getElementById("image").src = "cute.jpg";
+                    imgsrc = 2;
+                }
+            }
+        </script>
+    </body>
+</html>
     <input type="button" onclick="changeImage()" value="click!"/>
 </body>
 </html>

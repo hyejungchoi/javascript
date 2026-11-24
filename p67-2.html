@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id ="image" src="cute.jpg" width="200" height"350">
+    <script>
+            var imgsrc = 1;
+        function changeImage() {
+            if(imgsrc == 2){
+                document.getElementById("image").src="cute.jpg";
+            imgsrc=1;
+            }else{
+                document.getElementById("image").src="angry.jpg";
+                imgsrc=2;
+            }
+    </script>
+    <input type="button" onclick="changeImage()" value="click!"/>
+</body>
+</html>
