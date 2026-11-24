@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const stringValue = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+            positions = new Array();
+            pos = stringValue.indexOf("e");
+
+        while(pos>-1){
+            positions.push(pos);
+            pos = stringValue.indexOf("e", pos+1);
+        }
+        alert(positions);
+    </script>
+</body>
+</html>
