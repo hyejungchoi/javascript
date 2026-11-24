@@ -12,16 +12,17 @@
         person1.age = 29;
 
         var person2 ={
-            name: "Mina",
+            name: "alien",
             age: 30
         };
         var person3 ={};
-        person3.name = "paul";
-        person3.age = 34;
+        person3.name = "annie";
+        person3.age = 40;
 
         document.write(person1.name + ':' + person1.age + '<br/>')
         document.write(person2.name + ':' + person2.age + '<br/>')
         document.write(person3.name + ':' + person3.age + '<br/>')
+        //③ 참조 비교(===)를 할 때_세 객체에 똑같은 name과 age를 넣더라도 서로 다른 힙(Heap) 메모리 공간에 만들어진 별개의 객체이기 때문에 person1 === person2로 비교하면 false가 나옵니다(내용은 같아도 주소/참조는 다름).
     </script>
 </body>
 </html>
