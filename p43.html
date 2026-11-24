@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function setName(obj){
+                obj.name = "Micky";
+            }
+            var person = new Object();
+            setName(person);
+            alert(person.name);
+        </script>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function setName(obj){ // obj = person
+            obj.name = "Hye";
+            obj = new Object(); //new keyword 사용시 새로운 객체를 만든다고 생각하기
+            obj.name = "Greg";
+        }
+        var person = new Object();
+        setName(person);
+        alert(person.name);
+    </script>
+</body>
+</html>
