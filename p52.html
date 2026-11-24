@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person1 = {
+        toLocaleString: function () {
+          return "Micky";
+        },
+        toString: function () {
+          return "Minnie";
+        },
+      };
+
+      const person2 = {
+        toLocaleString: function () {
+          return "grigorios";
+        },
+        toString: function () {
+          return "greg";
+        },
+      };
+      const people = [person1, person2];
+      alert(people);
+      alert(people.toString()); //명시적 호출
+      alert(people.toLocaleString());
+    </script>
+  </body>
+</html>
