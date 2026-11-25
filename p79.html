@@ -22,30 +22,31 @@
   </head>
   <body>
     <form>
-      display <input id="display" value="0" size="30" />
+      <input id="display" value="0" size="10" />
+      <br /><br>
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="7" onclick="add('7')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="8" onclick="add('8')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="9" onclick="add('9')" />
+      <input type="button" class="theme-accent btn-subtle btn-sm rounded-pill" value="/" onclick="add('/')" />
       <br />
-      <input type="button" value="7" onclick="add('7')" />
-      <input type="button" value="8" onclick="add('8')" />
-      <input type="button" value="9" onclick="add('9')" />
-      <input type="button" value="/" onclick="add('/')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="4" onclick="add('4')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="5" onclick="add('5')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="6" onclick="add('6')" />
+      <input type="button" class="theme-accent btn-subtle btn-sm rounded-pill" value="*" onclick="add('*')" />
       <br />
-      <input type="button" value="4" onclick="add('4')" />
-      <input type="button" value="5" onclick="add('5')" />
-      <input type="button" value="6" onclick="add('6')" />
-      <input type="button" value="*" onclick="add('*')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="1" onclick="add('1')" />      
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="2" onclick="add('2')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="3" onclick="add('3')" />
+      <input type="button" class="theme-accent btn-subtle btn-sm rounded-pill" value="-" onclick="add('-')" />
       <br />
-      <input type="button" value="1" onclick="add('1')" />
-      <input type="button" value="2" onclick="add('2')" />
-      <input type="button" value="3" onclick="add('3')" />
-      <input type="button" value="-" onclick="add('-')" />
-      <br />
-      <input type="button" value="0" onclick="add('0')" />
-      <input type="button" value="+" onclick="add('+')" />
-      <input type="button" value="(" onclick="add('(')" />
-      <input type="button" value=")" onclick="add(')')" />
-      <br>
-      <button type="button" class="theme-danger btn-solid btn-styled btn-lg" onclick="clearDisplay()" />Clear
-      <button type="button" class="theme-warning btn-solid btn-styled btn-lg" onclick="compute()" >Enter
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="0" onclick="add('0')" />
+      <input type="button" class="theme-primary btn-subtle btn-sm rounded-pill" value="+" onclick="add('+')" />
+      <input type="button" class="theme-accent btn-subtle btn-sm rounded-pill" value="(" onclick="add('(')" />
+      <input type="button" class="theme-accent btn-subtle btn-sm rounded-pill" value=")" onclick="add(')')" />
+      <br><br>
+    
+      <button type="button" class="theme-danger btn-subtle" onclick="clearDisplay()" />Clear
+      <button type="button" class="theme-warning btn-subtle" onclick="compute()" >Enter
 
       </button>
     </form>
