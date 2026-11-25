@@ -41,10 +41,15 @@
       <br />
       <input type="button" value="0" onclick="add('0')" />
       <input type="button" value="+" onclick="add('+')" />
-      <br />
-      <input type="button" class="btn" value="Clear" onclick="clearDisplay()" />
-      <input type="button" value="Enter" name="enter" onclick="compute()" />
-      <button type="button" class="theme-primary btn-outline btn-lg" onclick="compute()" >Enter
+      <input type="button" value="(" onclick="add('(')" />
+      <input type="button" value=")" onclick="add(')')" />
+      <br>
+      <button type="button" class="theme-danger btn-solid btn-styled btn-lg" onclick="clearDisplay()" />Clear
+      <button type="button" class="theme-warning btn-solid btn-styled btn-lg" onclick="compute()" >Enter
+
+      </button>
+    </form>
+      </button>
 
       </button>
     </form>
