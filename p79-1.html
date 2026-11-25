@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>
+        <script>
+            var expression = "";
+
+            function add(character) {
+                expression = expression + character;
+                document.getElementById("display").value = expression;
+            }
+            function compute() {
+                expression = "(" + expression + ")";
+                document.getElementById("display").value = eval(expression);
+            }
+            function clearDisplay() {
+                expression = "";
+                document.getElementById("display").value = 0;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="exampleFormControlInput" class="form-label mb-2">Calcualtor Display</label>
+            <input type="email" class="form-control" id="display" placeholder="...">
+            <br>
+            <input type="button" value="  7  " onclick="add('7')">
+            <input type="button" value="  8  " onclick="add('8')">
+            <input type="button" value="  9  " onclick="add('9')">
+            <input type="button" value="  /  " onclick="add('/')">
+            <br>
+            <input type="button" value="  4  " onclick="add('4')">
+            <input type="button" value="  5  " onclick="add('5')">
+            <input type="button" value="  6  " onclick="add('6')">
+            <input type="button" value="  *  " onclick="add('*')">
+            <br>
+            <input type="button" value="  1  " onclick="add('1')">
+            <input type="button" value="  2  " onclick="add('2')">
+            <input type="button" value="  3  " onclick="add('3')">
+            <input type="button" value="  -  " onclick="add('-')">
+            <br>
+            <input type="button" value="  0  " onclick="add('0')">
+            <input type="button" value="  +  " onclick="add('+')">
+            <br>
+            <button type="button" class="theme-warning btn-outline rounded-0" onclick="clearDisplay()">Clear</button>
+            <button type="button" class="theme-success btn-outline rounded-0" onclick="compute()">Enter</button>
+        </form>
+    </body>
+</html>
